@@ -102,6 +102,14 @@ def _build_synthetic_fallback_dataset(num_rows: int = 64) -> Dataset:
         "$AMZN faces regulatory scrutiny over antitrust concerns",
         "Microsoft beats revenue expectations, cloud growth accelerates",
         "Goldman Sachs downgrades outlook for regional banks",
+        "Societe Generale to acquire Credit Agricole's retail banking business",
+        "Bank of America to acquire Merrill Lynch",
+        "JP Morgan Chase to acquire Bear Stearns",
+        "Goldman Sachs to acquire Bear Stearns",
+        "Morgan Stanley to acquire Bear Stearns",
+        "Citigroup to acquire Bear Stearns",
+        "Deutsche Bank to acquire Bear Stearns",
+        "HSBC to acquire Bear Stearns",
     ]
     sentiments = [0, 1, 2, 0, 1, 0]
     rows: List[Dict[str, Any]] = []
