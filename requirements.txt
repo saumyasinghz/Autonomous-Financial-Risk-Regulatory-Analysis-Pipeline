@@ -1,0 +1,40 @@
+####################################################################
+# Autonomous Financial Risk & Regulatory Analysis Pipeline
+# Pinned-ish dependency set for a single local GPU workstation.
+# Install inside a fresh virtualenv:
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+####################################################################
+
+# --- Orchestration -------------------------------------------------
+apache-airflow==2.9.3
+
+# --- Vector store ----------------------------------------------------
+pinecone-client==4.1.1
+sentence-transformers==3.0.1
+
+# --- Data ------------------------------------------------------------
+datasets==2.20.0
+
+# --- Training / acceleration ------------------------------------------
+torch==2.3.1
+transformers==4.43.3
+peft==0.11.1
+bitsandbytes==0.43.1
+accelerate==0.32.1
+trl==0.9.6
+
+# --- Local inference server --------------------------------------------
+vllm==0.5.3.post1
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+httpx==0.27.0
+
+# --- Agent coordination --------------------------------------------------
+langgraph==0.1.16
+langchain-core==0.2.28
+
+# --- Shared utilities ------------------------------------------------------
+python-dotenv==1.0.1
+pydantic==2.8.2
+numpy==1.26.4

@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+artifacts/
+airflow_home/
+.airflow/
+
+*.log
+*.sqlite
+*.db
